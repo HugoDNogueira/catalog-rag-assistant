@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Stainless Steel Wood Screw 4x40mm",
+    "category": "Fasteners",
+    "description": "Corrosion-resistant stainless steel screw for outdoor woodworking and decking projects.",
+    "tags": ["screw", "outdoor", "wood", "stainless"],
+    "price_cents": 8
+  },
+  {
+    "name": "Galvanized Hex Bolt M8x60mm",
+    "category": "Fasteners",
+    "description": "Zinc-galvanized hex bolt suited for structural and outdoor metal assemblies.",
+    "tags": ["bolt", "galvanized", "structural"],
+    "price_cents": 25
+  },
+  {
+    "name": "Cordless Impact Drill 18V",
+    "category": "Power Tools",
+    "description": "18V brushless impact drill with two-speed gearbox, suitable for wood, metal and masonry.",
+    "tags": ["drill", "cordless", "power tool"],
+    "price_cents": 8999
+  },
+  {
+    "name": "Claw Hammer 450g",
+    "category": "Hand Tools",
+    "description": "Fibreglass-handled claw hammer with shock-absorbing grip for general carpentry.",
+    "tags": ["hammer", "hand tool", "carpentry"],
+    "price_cents": 1299
+  },
+  {
+    "name": "Exterior Acrylic Paint 5L White",
+    "category": "Paint & Finishing",
+    "description": "Weather-resistant acrylic paint for exterior walls, UV-stable and washable.",
+    "tags": ["paint", "exterior", "acrylic"],
+    "price_cents": 4499
+  },
+  {
+    "name": "Copper Pipe 15mm x 1m",
+    "category": "Plumbing",
+    "description": "Standard copper pipe for domestic water supply and heating installations.",
+    "tags": ["pipe", "copper", "plumbing"],
+    "price_cents": 650
+  },
+  {
+    "name": "PVC Ball Valve 1/2 inch",
+    "category": "Plumbing",
+    "description": "Corrosion-free PVC ball valve for water shut-off in domestic plumbing systems.",
+    "tags": ["valve", "pvc", "plumbing"],
+    "price_cents": 320
+  },
+  {
+    "name": "Angle Grinder 125mm 900W",
+    "category": "Power Tools",
+    "description": "Compact angle grinder for cutting and grinding metal, stone and tile.",
+    "tags": ["grinder", "power tool", "cutting"],
+    "price_cents": 5499
+  },
+  {
+    "name": "Rust-Resistant Deck Screw 5x60mm",
+    "category": "Fasteners",
+    "description": "Weatherproof coated deck screw designed for exterior decking and outdoor structures.",
+    "tags": ["screw", "outdoor", "deck", "rust-resistant"],
+    "price_cents": 12
+  },
+  {
+    "name": "Adjustable Wrench 250mm",
+    "category": "Hand Tools",
+    "description": "Chrome-vanadium adjustable wrench with wide jaw capacity for plumbing and general repairs.",
+    "tags": ["wrench", "hand tool", "plumbing"],
+    "price_cents": 1899
+  }
+]
