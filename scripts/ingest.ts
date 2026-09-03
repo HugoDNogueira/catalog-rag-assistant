@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { embed } from "../lib/embeddings";
 
@@ -22,7 +23,7 @@ async function main() {
 
   const supabase = createClient(url, serviceRoleKey, { auth: { persistSession: false } });
 
-  const raw = readFileSync(new URL("../data/products.sample.json", import.meta.url), "utf-8");
+  const raw = readFileSync(join(process.cwd(), "data/products.sample.json"), "utf-8");
   const products: SourceProduct[] = JSON.parse(raw);
 
   for (let i = 0; i < products.length; i += BATCH_SIZE) {

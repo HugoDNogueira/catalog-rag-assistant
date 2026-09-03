@@ -25,7 +25,7 @@ User question ──► embed question ─────────────�
 
 ## Stack
 
-- Next.js 15 (App Router) + TypeScript
+- Next.js 16 (App Router) + TypeScript
 - Supabase / PostgreSQL with `pgvector`
 - Voyage AI (`voyage-3.5-lite`) for embeddings
 - Anthropic Claude API for grounded answer generation

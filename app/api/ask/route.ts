@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
 import { askRequestSchema } from "@/lib/schemas";
+import { getAnthropicClient } from "@/lib/anthropic";
 import { embed } from "@/lib/embeddings";
 import { matchProducts } from "@/lib/products";
-
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => null);
@@ -23,7 +21,7 @@ export async function POST(request: NextRequest) {
     .map((p) => `- ${p.name} (${p.category}): ${p.description}`)
     .join("\n");
 
-  const completion = await anthropic.messages.create({
+  const completion = await getAnthropicClient().messages.create({
     model: "claude-sonnet-5",
     max_tokens: 500,
     system:
