@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* The UI is designed for a light surface; declare it explicitly so the page
+   does not inherit the browser/OS dark theme and render dark-on-dark. */
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}
