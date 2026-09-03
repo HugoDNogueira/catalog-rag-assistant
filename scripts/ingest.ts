@@ -1,4 +1,4 @@
-import "dotenv/config";
+import { config } from "dotenv";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { createClient } from "@supabase/supabase-js";
@@ -13,6 +13,8 @@ type SourceProduct = {
 };
 
 const BATCH_SIZE = 20;
+
+config({ path: ".env.local" });
 
 async function main() {
   const url = process.env.SUPABASE_URL;

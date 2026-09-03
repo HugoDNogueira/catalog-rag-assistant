@@ -5,9 +5,12 @@ questions about a retail product catalog, grounded only in the catalog itself.
 
 ## Status
 
-Work in progress — skeleton scaffolded, not yet deployed. Uses a small set of
-**synthetic** hardware-store products (`data/products.sample.json`), not real
-client data.
+Work in progress, not yet deployed. Uses a small set of **synthetic** hardware-store
+products (`data/products.sample.json`), not real client data.
+
+Retrieval pipeline (embeddings + pgvector search) verified working end-to-end
+against a live database. Generation step (Claude API) is integrated but not yet
+verified end-to-end — pending API credit.
 
 ## Architecture
 
@@ -44,4 +47,6 @@ User question ──► embed question ─────────────�
 - [ ] Expand `data/products.sample.json` into a larger synthetic catalog (200-500 products)
 - [ ] Deploy to Vercel
 - [ ] Add a tool-calling step (e.g. price-range filtering) to genuinely justify "agentic" in the CV
-- [ ] Small eval script: a fixed set of test questions with expected top-k products
+- [ ] Eval script: a fixed set of test questions with expected top-k products (retrieval quality)
+- [ ] Structured outputs for the Claude response (e.g. typed product recommendations, not just free text)
+- [ ] Basic observability: log latency and token usage per request
